@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio of Riya Tyagi, a passionate MERN stack developer with expertise in creating dynamic web applications.">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 	<title>Portfolio Web Design</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +14,10 @@
 	<script src="./scripts.js"></script>
 </head>
 <body>
-	<header>
-			<div class="logo-text">Portfolio Website</div>
+	<header class="flex justify-between items-center p-4 bg-white shadow-md">
+		  <div class="text-2xl font-bold text-indigo-600">Portfolio Website</div>
+
+
 		<nav>
 			<ul id="menu">
 				<li>
@@ -34,17 +38,14 @@
 
 				</li>
 			</ul>
-			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
-				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-				</svg>
-			</a>
+					
+			
 		</nav>
 	</header>
 	<main>
 		<section class="hero container">
-			<div class="hero-blue">
-      <img class="hero-image"src="./imgs/IMG-2.jpg" alt="Riya Tyagi" width="" />
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-blue-100 p-6 rounded-2xl">
+  <img class="w-64 h-64 object-cover rounded-full" src="./imgs/IMG-2.jpg" alt="Riya Tyagi" />
 				
 	<div>
 					<h1><small>Hi I'm</small>
@@ -52,8 +53,8 @@
 					<p>
 						An passionate MERN stack developer who transforms ideas into dynamic and scalable web applications. <br>Adept at leveraging MongoDB for database management, Express.js and Node.js for backend efficiency, and React.js for user-centric interfaces.</p>
 					<div class="call-to-action">
-						<a href="./Riya_Resume.pdf" class="button black">
-							View Resume
+						<a href="./Riya_Resume.pdf" class="bg-black text-white px-5 py-2 rounded-lg shadow hover:bg-gray-800 transition">View Resume</a>
+
 						</a>
 						<a href="mailto:tyagiriya517@gmail.com" class="button white">
 							Contact Me
