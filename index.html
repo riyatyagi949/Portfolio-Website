@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio of Riya Tyagi, a passionate MERN stack developer with expertise in creating dynamic web applications.">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	 <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
 
 	<title>Portfolio Web Design</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,31 +21,140 @@
         <meta property="og:description" content="Explore the projects, skills, and journey of Riya Tyagi, a passionate web developer.">
         <meta property="og:image" content="imgs/IMG-2.jpg">
         <meta property="og:type" content="website">
+	<style>
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease forwards;
+    }
+
+    .menu-enter {
+      animation: menuSlideDown 0.3s ease forwards;
+    }
+
+    @keyframes menuSlideDown {
+      from { transform: scaleY(0); opacity: 0; }
+      to { transform: scaleY(1); opacity: 1; }
+    }
+
+    .active-link {
+      color: #6366f1; /* Tailwind indigo-500 */
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body>
-	<header>
-		<nav class="flex justify-between items-center relative">
-  <!-- Animated Heading -->
-  <h1 class="text-2xl font-bold animate-bounce text-indigo-600 transition duration-500 ease-in-out">
-    Portfolio Website
-  </h1>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+<header>
+		
+     
 
-  <!-- Hamburger Icon (Mobile Only) -->
-  <button class="text-3xl md:hidden focus:outline-none" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-    &#9776;
-  </button>
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center relative">
+    
+    <!-- Animated Title -->
+    <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 slide-in">
+      Portfolio Website
+    </div>
 
-  <!-- Nav Links -->
-<ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none px-4 py-4 md:p-0 z-10">
+    <!-- Right Icons (Dark mode toggle + hamburger) -->
+    <div class="flex gap-4 items-center">
+      
+      <!-- Dark Mode Toggle -->
+      <button id="themeToggle" class="text-gray-700 dark:text-gray-300 focus:outline-none">
+        <svg id="iconSun" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+             d="M12 3v1m0 16v1m8.66-9H21M3 12H4m15.07 6.07l-.71.71M4.93 6.93l-.71.71m12.02-.71l.71.71M4.93 17.07l.71.71M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
 
-    <li><a href="#hero" class="block py-2 md:py-0">Home</a></li>
-    <li><a href="#skills" class="block py-2 md:py-0">Skills</a></li>
-    <li><a href="#experience" class="block py-2 md:py-0">Experience</a></li>
-    <li><a href="#projects" class="block py-2 md:py-0">Projects</a></li>
-  </ul>
-</nav>
+        <svg id="iconMoon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+             d="M21 12.79A9 9 0 1111.21 3a7 7 0 0010.14 9.79z"/></svg>
+      </button>
 
+      <!-- Hamburger (mobile only) -->
+      <button id="hamburger" onclick="toggleMobileMenu()" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
 
+    <!-- Navigation Links -->
+    <ul id="menu"
+        class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent px-4 py-4 md:p-0 z-10 gap-4 md:gap-6 text-center transform origin-top">
+      <li><a href="#home" class="block hover:text-indigo-500">Home</a></li>
+      <li><a href="#skills" class="block hover:text-indigo-500">Skills</a></li>
+      <li><a href="#experience" class="block hover:text-indigo-500">Experience</a></li>
+      <li><a href="#projects" class="block hover:text-indigo-500">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dummy Sections -->
+  <section id="home" class="p-8 h-screen">🏠 Home Section</section>
+  <section id="skills" class="p-8 h-screen bg-gray-200 dark:bg-gray-700">🧠 Skills Section</section>
+  <section id="experience" class="p-8 h-screen">💼 Experience Section</section>
+  <section id="projects" class="p-8 h-screen bg-gray-200 dark:bg-gray-700">💡 Projects Section</section>
+
+  <!-- Scripts -->
+  <script>
+    const menu = document.getElementById("menu");
+    const links = menu.querySelectorAll("a");
+    const themeToggle = document.getElementById("themeToggle");
+    const iconSun = document.getElementById("iconSun");
+    const iconMoon = document.getElementById("iconMoon");
+
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("menu-enter");
+    }
+
+    // Hide menu on link click (mobile only)
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+          menu.classList.add("hidden");
+        }
+      });
+    });
+
+    // Dark mode toggle
+    function updateThemeIcon() {
+      const isDark = document.documentElement.classList.contains("dark");
+      iconSun.style.display = isDark ? "block" : "none";
+      iconMoon.style.display = isDark ? "none" : "block";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      updateThemeIcon();
+    });
+
+    updateThemeIcon();
+
+    // Active link on scroll
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      links.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+        const offsetTop = section.offsetTop - 80;
+        const offsetBottom = offsetTop + section.offsetHeight;
+        if (scrollY >= offsetTop && scrollY < offsetBottom) {
+          link.classList.add("active-link");
+        } else {
+          link.classList.remove("active-link");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+ 
 
 	
 </header>
