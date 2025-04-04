@@ -7,6 +7,6 @@
   const links = menu.querySelectorAll("a");
   links.forEach(link => {
     link.addEventListener("click", () => {
-      menu.classList.add("hidden");
+      menu.classList.add("hidden"); // hide menu after click
     });
   });
