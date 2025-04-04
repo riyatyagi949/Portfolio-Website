@@ -20,10 +20,13 @@
 <body>
 	<header>
 		<nav class="flex justify-between items-center relative">
-  <h1 class="text-2xl font-bold">Portfolio Website</h1>
+  <!-- Animated Heading -->
+  <h1 class="text-2xl font-bold animate-bounce text-indigo-600 transition duration-500 ease-in-out">
+    Portfolio Website
+  </h1>
 
-  <!-- Hamburger Icon -->
-  <button class="text-3xl md:hidden" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+  <!-- Hamburger Icon (Mobile Only) -->
+  <button class="text-3xl md:hidden focus:outline-none" onclick="toggleMobileMenu()" aria-label="Toggle menu">
     &#9776;
   </button>
 
@@ -35,6 +38,7 @@
     <li><a href="#projects" class="block py-2 md:py-0">Projects</a></li>
   </ul>
 </nav>
+
 
 
 	
