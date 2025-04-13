@@ -107,7 +107,7 @@
   }
   
   /* MEDIA QUERIES */
-  @media (max-width: 768px) {
+  @media (max-width: 1080px) {
 	header {
 	  flex-direction: column;
 	  align-items: flex-start;
@@ -118,6 +118,8 @@
 	  position: absolute;
 	  top: 20px;
 	  right: 20px;
+          z-index: 1001;
+
 	}
   
 	nav {
@@ -131,6 +133,12 @@
 	  padding: 10px;
 	  width: 100%;
 	  text-align: left;
+           position: absolute;
+           top: 60px;
+           right: 0;
+            z-index: 1000;
+           box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		
 	}
   
 	#menu li {
