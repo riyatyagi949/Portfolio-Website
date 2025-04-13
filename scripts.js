@@ -1,13 +1,13 @@
-  function toggleMobileMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("hidden");
-  }
-
+function toggleMenu() {
   const menu = document.getElementById("menu");
-  const links = menu.querySelectorAll("a");
+  menu.classList.toggle("show");
+}
 
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      menu.classList.add("hidden");
-    });
+const menu = document.getElementById("menu");
+const links = menu.querySelectorAll("a");
+
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("show");
   });
+});
