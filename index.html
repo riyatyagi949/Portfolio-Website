@@ -4,81 +4,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio of Riya Tyagi, a passionate MERN stack developer with expertise in creating dynamic web applications.">
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-	
-
 	<title>Portfolio Web Design</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
 	<script src="./scripts.js"></script>
-	<meta property="og:title" content="Riya Tyagi - MERN Stack Developer Portfolio">
-        <meta property="og:description" content="Explore the projects, skills, and journey of Riya Tyagi, a passionate web developer.">
-        <meta property="og:image" content="imgs/IMG-2.jpg">
-        <meta property="og:type" content="website">
-	
-    
 </head>
-	<body>
-		<main>
-	<header class="bg-white dark:bg-gray-900 fixed w-full z-50 shadow-md">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-    
-    <!-- Logo or Site Name -->
-    <div class="text-xl font-bold text-gray-800 dark:text-white animate-pulse">
-      Portfolio Website
-    </div>
-
-    <!-- Hamburger Button for Mobile -->
-    <div class="md:hidden">
-      <button onclick="toggleMobileMenu()" class="text-gray-800 dark:text-white focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Desktop Menu -->
-    <nav class="hidden md:flex space-x-6">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#projects" class="nav-link">Projects</a>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu (Initially hidden) -->
-  <nav id="menu" class="md:hidden hidden px-4 pb-4 bg-white dark:bg-gray-900 space-y-2">
-    <a href="#home" class="block nav-link">Home</a>
-    <a href="#skills" class="block nav-link">Skills</a>
-    <a href="#experience" class="block nav-link">Experience</a>
-    <a href="#projects" class="block nav-link">Projects</a>
-  </nav>
-</header>
-	
-     
+<body>
+	<header>
+			<div class="logo-text">Portfolio Website</div>
+			<div class="hamburger" onclick="toggleMenu()">☰</div>
+         <nav>
+			<ul id="menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#recentworkexperience">Experience</a></li>
+			     <li><a href="mailto:tyagiriya517@gmail.com" class="button">Contact Me</a></li>
+			</ul>
+			</nav>
+	</header>
 
 
 
-      
-
-  
-
-    
-
-
-	
-		
-				
-				
-					
-			
-		
 	<main>
 		<section class="hero container">
-<div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-blue-100 p-6 rounded-2xl">
-  <img class="w-64 h-64 object-cover rounded-full" src="./imgs/IMG-2.jpg" alt="Riya Tyagi" />
+			<div class="hero-blue">
+      <img class="hero-image"src="./imgs/IMG-2.jpg" alt="Riya Tyagi" width="" />
 				
 	<div>
 					<h1><small>Hi I'm</small>
@@ -86,8 +39,8 @@
 					<p>
 						An passionate MERN stack developer who transforms ideas into dynamic and scalable web applications. <br>Adept at leveraging MongoDB for database management, Express.js and Node.js for backend efficiency, and React.js for user-centric interfaces.</p>
 					<div class="call-to-action">
-						<a href="./Riya_Resume.pdf" class="bg-black text-white px-5 py-2 rounded-lg shadow hover:bg-gray-800 transition">View Resume</a>
-
+						<a href="./Riya_Resume.pdf" class="button black">
+							View Resume
 						</a>
 						<a href="mailto:tyagiriya517@gmail.com" class="button white">
 							Contact Me
