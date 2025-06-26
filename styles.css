@@ -337,13 +337,7 @@ h1 span {
     width: 40px;
   }
 }
-	
-	
-	
-	
-		
-   
-  /* Third Half  */
+/* Third Half  */
 .logos {
 	background-color: var(--base-100);
 	border-radius:30px;
@@ -509,96 +503,104 @@ h3 {
 	}
 }
 
-/* Sixth HAlf  */
-.bento {
-	.bento-grid {
-		display:grid;
-		grid-gap:30px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		height:960px;
-		@media(max-width:1024px){
-			grid-template-rows: repeat(8, 1fr);
-		}
-		@media(max-width:768px){
-			display:flex;
-			flex-direction:column;
-			gap:30px;
-			height:auto;
-		}
-		.bento-item {
-			padding:30px;
-			background-color: var(--base-100);
-			border-radius:15px;
-			position:relative;
-			overflow:hidden;
-			img {
-				position:absolute;
-				top:0;
-				left:0;
-				height:100%;
-				object-fit:cover;
-				transition: ease 3s all;
-			}
-			&:hover {
-				img {
-					transform: scale(1.2);
-				}
-			}
-			@media(max-width:768px){
-				height:240px;
-			}
-			&:nth-child(1) {
-				grid-column: span 2;
-				grid-row: span 2;
-				@media(max-width:1024px){
-					grid-column: span 2;
-					grid-row: span 2;
-				}
-			}
-			&:nth-child(2) {
-				grid-column: span 2;
-				grid-row: span 1;
-				@media(max-width:1024px){
-					grid-column: span 3;
-					grid-row: span 2;
-				}
-			}
-			&:nth-child(3) {
-				grid-column: span 1;
-				grid-row: span 1;
-				@media(max-width:1024px){
-					grid-column: span 3;
-					grid-row: span 2;
-				}
-			}
-			&:nth-child(4) {
-				grid-column: span 1;
-				grid-row: span 1;
-				@media(max-width:1024px){
-					grid-column: span 2;
-					grid-row: span 4;
-				}
-			}
-			&:nth-child(5) {
-				grid-column: span 2;
-				grid-row: span 1;
-				@media(max-width:1024px){
-					grid-column: span 3;
-					grid-row: span 2;
-				}
-			}
-			&:nth-child(6) {
-				grid-column: span 5;
-				grid-row: span 3;
-				@media(max-width:1024px){
-					grid-column: span 5;
-					grid-row: span 2;
-				}
-			}
-		}
-	}
+/* Sixth Half  */
+.bento-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-auto-rows: 220px;
 }
+
+/* Common Card Style */
+.bento-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #f8f8f8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bento-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.bento-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Highlight Cards: Shoppify, BookView, RecipeBox, Stopwatch */
+.shoppify,
+.bookview,
+.recipebox,
+.stopwatch {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-auto-rows: 200px;
+  }
+
+  .shoppify,
+  .bookview,
+  .recipebox,
+  .stopwatch {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bento-item {
+    height: 200px;
+    width: 100%;
+  }
+
+  .shoppify,
+  .bookview,
+  .recipebox,
+  .stopwatch {
+    grid-column: auto;
+    grid-row: auto;
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  	
+			
+
 
 /* Seventh Half */
 
