@@ -4,10 +4,13 @@ Welcome to my Portfolio Website! 🚀 This is a personal web application showcas
 
 # ✨ Features
 
-✅ Responsive and modern design.📱💻
+✅ Responsive and modern design.
+
 ✅ Showcases projects, skills, and achievements.
-🎯✅ Integrated AI-powered chatbot.🤖
-✅ Smooth animations and interactive UI.✨
+
+✅ Integrated AI-powered chatbot.
+
+✅ Smooth animations and interactive UI.
 
 # 🛠️ Tech Stack
 
@@ -32,9 +35,9 @@ cd Portfolio
 # Open index.html in your browser.
 
 # 🛠️ Future Enhancements
-🚀 Improve chatbot capabilities with more interactions.🤖
-🚀 Add a contact form for direct communication .📩
-🚀 Optimize performance for faster loading speeds. ⚡
+🚀 Improve chatbot capabilities with more interactions.
+🚀 Add a contact form for direct communication .
+🚀 Optimize performance for faster loading speeds. 
 
 # 📢 Connect with Me
 
