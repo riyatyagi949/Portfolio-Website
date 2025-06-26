@@ -36,7 +36,9 @@ cd Portfolio
 
 # 🛠️ Future Enhancements
 🚀 Improve chatbot capabilities with more interactions.
+
 🚀 Add a contact form for direct communication .
+
 🚀 Optimize performance for faster loading speeds. 
 
 # 📢 Connect with Me
