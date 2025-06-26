@@ -138,8 +138,7 @@ nav ul li a:hover {
     padding: 12px 20px;
   }
 }
-
-  //Second Half	
+ /* Second Half	 */
 
 section.hero {
   max-width: 1440px;
@@ -337,6 +336,7 @@ h1 span {
     width: 40px;
   }
 }
+
 /* Third Half  */
 .logos {
 	background-color: var(--base-100);
@@ -397,7 +397,6 @@ h3 {
 	color: var(--base-800);
 }
 
-
 /* Fourth half */
 .skills {
 	.holder-blue {
@@ -432,14 +431,13 @@ h3 {
 		}
 	}
 }
-
 /* Fifth Half */
 
 .work-experience {
 	.jobs {
 		display:flex;
 		gap:40px;
-@media(max-width:1024px){
+         @media(max-width:1024px){
 			flex-direction:column;
 		}
 		article {
@@ -504,11 +502,6 @@ h3 {
 }
 
 /* Sixth Half  */
-/* ------------------------
-🌟 Clean, Balanced, Responsive Bento Grid
-   For Riya Tyagi's Portfolio Projects
-------------------------- */
-
 .bento-grid {
   display: grid;
   gap: 20px;
@@ -542,7 +535,7 @@ h3 {
   transform: scale(1.07);
 }
 
-/* 🟢 Special sizes */
+/*  Special sizes */
 .bento-item.shoppify,
 .bento-item.recipebox,
 .bento-item.bookview,
@@ -552,7 +545,7 @@ h3 {
   height: 100%;
 }
 
-/* ✨ Show full image for special cards */
+/*  Show full image for special cards */
 .bento-item.shoppify img,
 .bento-item.recipebox img,
 .bento-item.bookview img,
@@ -564,7 +557,7 @@ h3 {
   margin: auto;
 }
 
-/* 🔽 Smaller size for ResumeSpark and TravelHub */
+/*  Smaller size for ResumeSpark and TravelHub */
 .bento-item.resumespark,
 .bento-item.travelhub {
   grid-column: span 1;
@@ -579,7 +572,7 @@ h3 {
   background: #fff;
 }
 
-/* 🔄 Responsive: Tablet */
+/*  Responsive: Tablet */
 @media (max-width: 1024px) {
   .bento-item,
   .bento-item.shoppify,
@@ -599,7 +592,7 @@ h3 {
   }
 }
 
-/* 🔄 Responsive: Mobile */
+/*  Responsive: Mobile */
 @media (max-width: 768px) {
   .bento-grid {
     display: flex;
@@ -611,7 +604,6 @@ h3 {
     height: 200px;
   }
 }
-
 
 /* Seventh Half */
 .chatbot {
@@ -711,6 +703,6 @@ h3 {
 	}
 }
 @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
+    flex-direction : column;
+    align-items : center;
 }
