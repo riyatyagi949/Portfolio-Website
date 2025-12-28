@@ -24,28 +24,29 @@ OpenAI GPT API
 
 #  How to Use
 
-# Clone the repository:
+1) Clone the repository:
 
 git clone https://github.com/your-username/Portfolio.git
 
-# Navigate to the project folder:
+2) Navigate to the project folder:
 
 cd Portfolio
 
-# Open index.html in your browser.
+3) Open index.html in your browser.
 
 #  Future Enhancements
- Improve chatbot capabilities with more interactions.
+1) Improve chatbot capabilities with more interactions.
 
- Add a contact form for direct communication .
+2) Add a contact form for direct communication .
 
- Optimize performance for faster loading speeds. 
+3) Optimize performance for faster loading speeds. 
 
 #  Connect with Me
 
- GitHub: @riyatyag949
+GitHub: @riyatyag949
  
 Email: tyagiriya517@gmail.com
+
 
 
 
