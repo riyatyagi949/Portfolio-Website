@@ -1,8 +1,8 @@
-# 💼 Portfolio Website
+#  Portfolio Website
 
 Welcome to my Portfolio Website! 🚀 This is a personal web application showcasing my skills, projects, and achievements, featuring an interactive OpenAI GPT-powered chatbot to enhance user engagement. 
 
-# ✨ Features
+#  Features
 
 ✅ Responsive and modern design.
 
@@ -12,17 +12,17 @@ Welcome to my Portfolio Website! 🚀 This is a personal web application showcas
 
 ✅ Smooth animations and interactive UI.
 
-# 🛠️ Tech Stack
+#  Tech Stack
 
-HTML5 🏗️
+HTML5 
 
-CSS3 🎨
+CSS3 
 
-JavaScript 💻
+JavaScript 
 
-OpenAI GPT API 🤖
+OpenAI GPT API 
 
-# 🎯 How to Use
+#  How to Use
 
 # Clone the repository:
 
@@ -34,16 +34,16 @@ cd Portfolio
 
 # Open index.html in your browser.
 
-# 🛠️ Future Enhancements
-🚀 Improve chatbot capabilities with more interactions.
+#  Future Enhancements
+ Improve chatbot capabilities with more interactions.
 
-🚀 Add a contact form for direct communication .
+ Add a contact form for direct communication .
 
-🚀 Optimize performance for faster loading speeds. 
+ Optimize performance for faster loading speeds. 
 
-# 📢 Connect with Me
+#  Connect with Me
 
-💻 GitHub: @riyatyag 
+💻 GitHub: @riyatyag949
 Email: tyagiriya517@gmail.com
 
 🌟 If you like this project, don't forget to star ⭐ the repository!
