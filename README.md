@@ -1,6 +1,6 @@
 #  Portfolio Website
 
-Welcome to my Portfolio Website! 🚀 This is a personal web application showcasing my skills, projects, and achievements, featuring an interactive OpenAI GPT-powered chatbot to enhance user engagement. 
+Welcome to my Portfolio Website! This is a personal web application showcasing my skills, projects, and achievements, featuring an interactive OpenAI GPT-powered chatbot to enhance user engagement. 
 
 #  Features
 
@@ -43,10 +43,11 @@ cd Portfolio
 
 #  Connect with Me
 
-💻 GitHub: @riyatyag949
+ GitHub: @riyatyag949
+ 
 Email: tyagiriya517@gmail.com
 
-🌟 If you like this project, don't forget to star ⭐ the repository!
+
 
 
 
